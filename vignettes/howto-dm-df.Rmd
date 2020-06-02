@@ -183,3 +183,26 @@ flights_dm_all_keys %>%
   dm_examine_constraints() %>%
   tibble::as_tibble()
 ```
+
+## Conclusion
+
+In this tutorial we have demonstrated how to use {dm} with local data frames to take advantage of the power of relational data models without losing access to the familiar R way of working with data frames.
+If you want to learn more about relational data models, there is a good introduction in `vignette("howto-dm-theory")`. You may then wish to read about using dm to work with databases in more detail in `vignette("howto-dm-db")`.
+
+## Further reading
+
+`vignette("tech-dm-draw")` - A quick guide to dm's methods for drawing your data model for exploration, verification or documentation purposes. Learn how to customize the diagrams.
+
+`vignette("tech-dm-zoom")` - Learn how to manipulate the data in the tables in your dm using dplyr verbs.
+
+`vignette("tech-dm-filter")` - Need a subset of your data across tables? This introduction to dm's filtering methods will show you how to apply them to data that is separated into multiple tables.
+
+`vignette("tech-dm-join")` - Joining is how separate, linked tables are virtually combined in order to perform operations, generate summaries, or prepare data for extraction. This article covers dm's methods for creating the different kind of joins along with usage examples.
+
+`vignette("tech-dm-low-level")` - If your data model needs to be rock solid, this article covers the dm methods for checking every aspect of the model. It covers key constraints, cardinalities between tables, and methods for normalization as you construct your data model.
+
+`vignette("tech-dm-class")` - A detailed overview of the `"dm"` class.
+
+`vignette("tech-dm-naming")` - Making sense of dm's API.
+
+`vignette("tech-dm-cdm")` - If you're an early adopter, used dm version 0.0.5 or lower and want to migrate your code, this is for you.

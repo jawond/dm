@@ -300,3 +300,23 @@ my_dm_sqlite_resid$loans_residuals
 
 In this tutorial we have demonstrated how to use {dm} to work with existing databases and to construct your own from local tables, including specifying key constraints, and then deploy them to a RDBMS.
 If you would like more details an overview of all the methods available in {dm}, please see the [reference documentation](https://krlmlr.github.io/dm/reference/index.html).
+
+## Next Steps
+
+If you're familiar with relational data models but want to know how to work with them in dm, then any of `vignette("tech-dm-join")`, `vignette("tech-dm-filter")`, or `vignette("tech-dm-zoom")` is a good next step.
+
+`vignette("tech-dm-low-level")` - If your data model needs to be rock solid, this article covers the dm methods for checking every aspect of the model. It covers key constraints, cardinalities between tables, and methods for normalization as you construct your data model.
+
+If you feel you need to know more about relational data models in order to get the most out of dm, check out `vignette("howto-dm-theory")`.
+
+## Further reading
+
+`vignette("howto-dm-df")` - Is your data in local data frames? This article covers creating a data model from your local data frames, including building the relationships in your data model, verifying your model, and leveraging the power of dplyr to operate on your data model.
+
+`vignette("tech-dm-draw")` - A quick guide to dm's methods for drawing your data model for exploration, verification or documentation purposes. Learn how to customize the diagrams.
+
+`vignette("tech-dm-class")` - A detailed overview of the `"dm"` class.
+
+`vignette("tech-dm-naming")` - Making sense of dm's API.
+
+`vignette("tech-dm-cdm")` - If you're an early adopter, used dm version 0.0.5 or lower and want to migrate your code, this is for you.
